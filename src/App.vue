@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <appBar/>
     <v-main>
       <router-view/>
     </v-main>
@@ -7,10 +8,10 @@
 </template>
 
 <script>
-
+import appBar from '@/components/core/appBar/index.vue'
 export default {
   name: 'App',
-
+  components: {appBar},
   data: () => ({
     //
   }),
